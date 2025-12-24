@@ -109,7 +109,7 @@
         </div>
 
         <button
-          onclick="sendWA('Halo WebPro! Saya ingin konsultasi gratis mengenai pembuatan website.')"
+          onclick="sendWA('Halo Fachri.Site! Saya ingin konsultasi gratis mengenai pembuatan website.')"
           class="bg-brand-dark text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-blue transition shadow-lg shadow-blue-200"
         >
           Konsultasi Gratis
@@ -659,7 +659,7 @@
     </footer>
 
     <a
-      href="https://wa.me/082297649253"
+      href="https://wa.me/6282297649253"
       target="_blank"
       class="fixed bottom-6 right-6 z-[999] bg-brand-whatsapp text-white p-4 rounded-full shadow-2xl flex items-center justify-center animate-wa hover:scale-110 transition-transform"
     >
@@ -672,7 +672,7 @@
       lucide.createIcons();
 
       // Ganti dengan nomor WhatsApp Anda
-      const MY_PHONE = "082297649253";
+      const MY_PHONE = "6282297649253";
 
       function sendWA(text) {
         const url = `https://wa.me/${MY_PHONE}?text=${encodeURIComponent(
@@ -691,7 +691,7 @@
           return;
         }
 
-        const finalMsg = `Halo WebPro Studio,\n\nNama: ${name}\nMinat Paket: ${pack}\nDiskusi: ${msg}`;
+        const finalMsg = `Halo Fachri.Site,\n\nNama: ${name}\nMinat Paket: ${pack}\nDiskusi: ${msg}`;
         sendWA(finalMsg);
       }
 
