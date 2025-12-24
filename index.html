@@ -55,6 +55,13 @@
         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
       }
 
+      .portfolio-item img {
+        transition: transform 0.5s ease;
+      }
+      .portfolio-item:hover img {
+        transform: scale(1.1);
+      }
+
       /* Floating WA Animation */
       @keyframes pulse-wa {
         0% {
@@ -96,6 +103,7 @@
         >
           <a href="#" class="hover:text-brand-blue">Home</a>
           <a href="#layanan" class="hover:text-brand-blue">Layanan</a>
+          <a href="#portfolio" class="hover:text-brand-blue">Portfolio</a>
           <a href="#harga" class="hover:text-brand-blue">Harga</a>
           <a href="#kontak" class="hover:text-brand-blue">Kontak</a>
         </div>
@@ -134,6 +142,28 @@
             src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
             class="rounded-3xl shadow-2xl"
             alt="Preview Image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="partner" class="py-12 bg-white border-y border-gray-50">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <p
+          class="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mb-8"
+          data-aos="fade-up"
+        >
+          Bekerja Sama Dengan
+        </p>
+        <div
+          class="flex justify-center items-center"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <img
+            src="./img/p1.png"
+            class="h-20 md:h-20 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+            alt="Official Partner"
           />
         </div>
       </div>
@@ -209,6 +239,195 @@
           >
             Pilih Layanan <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white border-y border-gray-50 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <p
+          class="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mb-10"
+        >
+          Telah Dipercaya Oleh
+        </p>
+        <div
+          class="flex flex-wrap justify-center items-center gap-12 opacity-40 grayscale hover:grayscale-0 transition-all duration-500"
+        >
+          <img src="./img/c1.jpg" class="h-10 md:h-20" alt="Client" />
+          <img src="./img/c2.png" class="h-10 md:h-20" alt="Client" />
+          <img src="./img/c3.png" class="h-10 md:h-20" alt="Client" />
+          <!-- <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_2021.svg"
+            class="h-6 md:h-8"
+            alt="Client"
+          /> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="py-24 px-6 max-w-7xl mx-auto">
+      <div
+        class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6"
+        data-aos="fade-up"
+      >
+        <div>
+          <h2 class="text-4xl font-extrabold mb-4">Portfolio Terbaru</h2>
+          <p class="text-slate-500">
+            Kumpulan karya terbaik yang kami kerjakan dengan sepenuh hati.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="portfolio-item group overflow-hidden rounded-3xl bg-white border border-gray-100"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <a
+            href="./img/porto1.png"
+            class="glightbox"
+            data-glightbox="title: Website Company Profile; description: Desain bersih dan modern untuk korporasi."
+          >
+            <div class="relative overflow-hidden aspect-video">
+              <img
+                src="./img/thumb-porto1.png"
+                class="w-full h-full object-cover"
+                alt="Portfolio"
+              />
+              <div
+                class="absolute inset-0 bg-brand-blue/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <i data-lucide="eye" class="text-white w-10 h-10"></i>
+              </div>
+            </div>
+          </a>
+          <div class="p-6">
+            <span class="text-xs font-bold text-brand-blue uppercase"
+              >Portal Berita BPSDM Provinsi Gorontalo</span
+            >
+            <h3 class="font-bold text-lg mt-1">
+              Website Pengenalan dan papan informasi BPSDM Provinsi Gorontalo
+            </h3>
+          </div>
+        </div>
+
+        <div
+          class="portfolio-item group overflow-hidden rounded-3xl bg-white border border-gray-100"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <a href="./img/porto2.png" class="glightbox">
+            <div class="relative overflow-hidden aspect-video">
+              <img
+                src="./img/thumb-porto2.png"
+                class="w-full h-full object-cover"
+                alt="Portfolio"
+              />
+              <div
+                class="absolute inset-0 bg-brand-blue/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <i data-lucide="eye" class="text-white w-10 h-10"></i>
+              </div>
+            </div>
+          </a>
+          <div class="p-6">
+            <span class="text-xs font-bold text-brand-blue uppercase"
+              >Landing Page Untuk LMS Kediklatan BPSDM Provinsi Gorontalo</span
+            >
+            <h3 class="font-bold text-lg mt-1">
+              Website Informasi LMS Kediklatan BPSDM Provinsi Gorontalo
+            </h3>
+          </div>
+        </div>
+
+        <div
+          class="portfolio-item group overflow-hidden rounded-3xl bg-white border border-gray-100"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <a href="./img/porto3.png" class="glightbox">
+            <div class="relative overflow-hidden aspect-video">
+              <img
+                src="./img/thumb-porto3.png"
+                class="w-full h-full object-cover"
+                alt="Portfolio"
+              />
+              <div
+                class="absolute inset-0 bg-brand-blue/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <i data-lucide="eye" class="text-white w-10 h-10"></i>
+              </div>
+            </div>
+          </a>
+          <div class="p-6">
+            <span class="text-xs font-bold text-brand-blue uppercase"
+              >Website E-Data Sektor Kabupaten Boalemo</span
+            >
+            <h3 class="font-bold text-lg mt-1">
+              Website Informasi Data Sektoral Dinas Komunikasi, Informatika dan
+              Statistik Kabupaten Boalemo
+            </h3>
+          </div>
+        </div>
+
+        <div
+          class="portfolio-item group overflow-hidden rounded-3xl bg-white border border-gray-100"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <a href="./img/porto4.png" class="glightbox">
+            <div class="relative overflow-hidden aspect-video">
+              <img
+                src="./img/thumb-porto4.png"
+                class="w-full h-full object-cover"
+                alt="Portfolio"
+              />
+              <div
+                class="absolute inset-0 bg-brand-blue/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <i data-lucide="eye" class="text-white w-10 h-10"></i>
+              </div>
+            </div>
+          </a>
+          <div class="p-6">
+            <span class="text-xs font-bold text-brand-blue uppercase"
+              >Landing Page SIM RS MEDION</span
+            >
+            <h3 class="font-bold text-lg mt-1">
+              Website Informasi Sistem Informasi Manajemen Rumah Sakit MEDION
+            </h3>
+          </div>
+        </div>
+
+        <div
+          class="portfolio-item group overflow-hidden rounded-3xl bg-white border border-gray-100"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <a href="./img/porto5.png" class="glightbox">
+            <div class="relative overflow-hidden aspect-video">
+              <img
+                src="./img/porto5.png"
+                class="w-full h-full object-cover"
+                alt="Portfolio"
+              />
+              <div
+                class="absolute inset-0 bg-brand-blue/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <i data-lucide="eye" class="text-white w-10 h-10"></i>
+              </div>
+            </div>
+          </a>
+          <div class="p-6">
+            <span class="text-xs font-bold text-brand-blue uppercase"
+              >Dashboard Sistem Informasi Manajemen Obat</span
+            >
+            <h3 class="font-bold text-lg mt-1">
+              Web App Dashboard Sistem Manajemen Distribusi obat masuk dan
+              keluar
+            </h3>
+          </div>
         </div>
       </div>
     </section>
